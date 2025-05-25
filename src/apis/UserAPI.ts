@@ -20,6 +20,7 @@ type GetUsersParams = {
 class UserAPI {
 	private static async fetchUsers(): Promise<User[]> {
 		const response = await fetch('/api/users.json');
+		console.log("users", response)
 		if (!response.ok) {
 			throw new Error('Failed to fetch users');
 		}

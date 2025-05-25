@@ -45,7 +45,7 @@ const UserTableBody = ({ users }: { users: User[] }) => {
 		<Table.Body>
 			{users.map((user) => (
 				<Table.Row key={user.id} className='group'>
-					<Table.Cell>{user.id.split('-')[0]}</Table.Cell>
+					<Table.Cell>{user.id}</Table.Cell>
 					<Table.Cell className='font-medium'>{user.name}</Table.Cell>
 					<Table.Cell>{user.email}</Table.Cell>
 					<Table.Cell>{titleCase(user.role)}</Table.Cell>
