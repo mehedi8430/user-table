@@ -3,6 +3,7 @@ import { UserAPI } from '@/apis/UserAPI';
 import { UserContext } from '../UserProvider';
 
 export const useFetchUsers = () => {
+	console.log("first")
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState<Error | null>(null);
 	const { state, dispatch } = useContext(UserContext);
